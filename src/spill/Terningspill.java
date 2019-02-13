@@ -7,5 +7,8 @@ public class Terningspill {
 	
 		this.id = id;
 	}
-
+ 
+	
+	
+	
 }
