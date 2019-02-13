@@ -10,5 +10,8 @@ public class Spiller {
 		this.navn = navn;
 		this.verdi = verdi;
 	}
-
+	
+	public void spill(Kopp kopp) {
+		
+	}
 }
