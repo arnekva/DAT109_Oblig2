@@ -3,20 +3,19 @@ package spill;
 public class Kopp {
 	private int id;
 	private int sum;
-	private Terning terning;
+	private Terning terning1;
+	private Terning terning2;
 
 	
 	public Kopp(int id, int sum) {
 		super();
 		this.id = id;
 		this.sum = sum;
+		
 	}
 	
 	public void trill() {
-		for(int i = 1; i <= 2; i++) {
-			Integer verdi = (int)((Math.random() * 6) + 1);
-			terning = new Terning(i, verdi);
-		}
+		
 	}
 
 
