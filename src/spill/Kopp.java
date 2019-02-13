@@ -44,15 +44,14 @@ public class Kopp {
 	}
 
 
-	public Terning getTerning() {
-		return terning;
+	public Terning getTerning1() {
+		return terning1;
+	}
+	public Terning getTerning2() {
+		return terning2;
 	}
 
 
-	public void setTerning(Terning terning) {
-		this.terning = terning;
-	}
-	
 	
 
 }
