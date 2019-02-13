@@ -13,5 +13,8 @@ public class Terning {
 		this.terningId = terningId;
 		this.verdi = verdi;
 	}
-
+	
+	public void leggTilSpiller(String navn, int verdi) {
+		
+	}
 }

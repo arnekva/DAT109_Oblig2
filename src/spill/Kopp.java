@@ -14,5 +14,4 @@ public class Kopp {
 		this.sum = sum;
 	}
 
-	
 }
