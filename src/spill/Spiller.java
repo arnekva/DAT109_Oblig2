@@ -2,16 +2,17 @@ package spill;
 
 public class Spiller {
 
-	String navn;
+	private String navn;
 	int verdi;
 
 	public Spiller(String navn, int verdi) {
-		super();
+		
 		this.navn = navn;
-		this.verdi = verdi;
+		this.verdi = 0;
 	}
 	
 	public void spill(Kopp kopp) {
 		
 	}
+
 }
