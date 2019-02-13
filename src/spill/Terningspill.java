@@ -19,6 +19,7 @@ public class Terningspill {
 
 	/**
 	 * Oppretter et spiller-objekt og legger det til i arraylisten av spillere
+	 * 
 	 * @param navn - Navnet på spilleren
 	 */
 	public void leggTilSpiller(String navn) {
@@ -27,26 +28,24 @@ public class Terningspill {
 	}
 
 	/**
-	 *  Går gjennom spillerlisten i en løkke og triller terningene. Clearer terninglisten i hver gjennomgang
-	 *  og printer resultatet i konsollen.
+	 * Går gjennom spillerlisten i en løkke og triller terningene. Clearer
+	 * terninglisten i hver gjennomgang og printer resultatet i konsollen.
 	 */
 	public void spill() {
 		for (int i = 0; i < spillere.size(); i++) {
 			spillere.get(i).spill(kopp);
 			kopp.getTerninger().clear();
-			if(spillere.get(i).getNavn().toLowerCase().equals("arne")) {
+
+			// her ligger det en liten juksebit
+			if (spillere.get(i).getNavn().toLowerCase().equals("arne")) {
 				spillere.get(i).setVerdi(12);
-			} 
-//			System.out.println("\n" +spillere.get(i).getNavn() + " scoret " + spillere.get(i).getVerdi());
+			}
+			// cheat end
 		}
 	}
 
 	public ArrayList<Spiller> getSpillere() {
 		return spillere;
-	}
-
-	public void setSpillere(ArrayList<Spiller> spillere) {
-		this.spillere = spillere;
 	}
 
 
