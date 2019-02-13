@@ -9,8 +9,6 @@ import java.util.ArrayList;
 public class Terningspill {
 
 	private int id;
-
-	private Spiller spiller;
 	private ArrayList<Spiller> spillere = new ArrayList<Spiller>();
 	private Kopp kopp = new Kopp(1, 0);
 

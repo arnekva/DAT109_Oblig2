@@ -33,7 +33,7 @@ public class Kopp {
 		}
 
 	}
-
+	
 	public int getId() {
 		return id;
 	}
