@@ -66,4 +66,5 @@ public class Kopp {
 		this.terninger = terninger;
 	}
 
+
 }

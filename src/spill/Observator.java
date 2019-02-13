@@ -12,9 +12,17 @@ public class Observator {
 		Terningspill spill = new Terningspill(1);
 
 		Scanner tast = new Scanner(System.in);
-		spill.leggTilSpiller("Are");
-		spill.leggTilSpiller("Marcus");
+		System.out.println("Hvor mange spillere skal spille: ");
+		int antall = tast.nextInt(); tast.nextLine();
+		
+		System.out.println("Skriv inn navnet på spillerene. Press enter mellom hvert navn!");
+		for(int i = 0; i<antall;i++) {
+
+			spill.leggTilSpiller(tast.nextLine());
+		}
+
 		spill.spill();
+		tast.close();
 
 	}
 
