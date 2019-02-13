@@ -37,8 +37,16 @@ public class Terningspill {
 			if(spillere.get(i).getNavn().equals("Arne")) {
 				spillere.get(i).setVerdi(12);
 			} 
-			System.out.println("\n" +spillere.get(i).getNavn() + " scoret " + spillere.get(i).getVerdi());
+//			System.out.println("\n" +spillere.get(i).getNavn() + " scoret " + spillere.get(i).getVerdi());
 		}
+	}
+
+	public ArrayList<Spiller> getSpillere() {
+		return spillere;
+	}
+
+	public void setSpillere(ArrayList<Spiller> spillere) {
+		this.spillere = spillere;
 	}
 
 

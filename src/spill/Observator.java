@@ -1,5 +1,6 @@
 package spill;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -8,6 +9,11 @@ import java.util.Scanner;
  */
 public class Observator {
 
+	/**
+	 * Starter spiller med å spørre etter antall deltakere og navn gjennom scanner input
+	 * Kjører spiller og printer resultatet på slutten.
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		Terningspill spill = new Terningspill(1);
 
@@ -23,7 +29,11 @@ public class Observator {
 
 		spill.spill();
 		tast.close();
-
+		
+		
+		ArrayList<Spiller> spillere = spill.getSpillere();
+		
+		spillere.stream().forEach(x -> System.out.println("\n"+x.getNavn() + " scoret:\t" + x.getVerdi()));
 	}
 
 }
