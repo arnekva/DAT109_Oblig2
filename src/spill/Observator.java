@@ -1,6 +1,8 @@
 package spill;
 
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 /**
@@ -31,8 +33,11 @@ public class Observator {
 		
 		
 		ArrayList<Spiller> spillere = spill.getSpillere();
-		
+		System.out.println("\n*** RESULTATER *** \n");
 		spillere.stream().forEach(x -> System.out.println(x.toString()));
+		Spiller vinner = spillere.stream().max(Comparator.comparing(Spiller::getVerdi)).orElseThrow(NoSuchElementException::new);
+	
+		System.out.println("\nVinneren er "+ vinner.getNavn() + "!");
 	}
 
 }

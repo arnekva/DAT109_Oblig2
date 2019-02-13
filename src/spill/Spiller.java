@@ -7,7 +7,7 @@ package spill;
 public class Spiller {
 
 	private String navn;
-	int verdi;
+	private int verdi;
 
 	public Spiller(String navn) {
 		

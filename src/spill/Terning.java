@@ -5,8 +5,8 @@ package spill;
  *
  */
 public class Terning {
-	int terningId;
-	int verdi;
+	private int terningId;
+	private int verdi;
 
 	/**
 	 * Kunstruktør for terning

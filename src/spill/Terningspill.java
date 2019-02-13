@@ -10,8 +10,8 @@ public class Terningspill {
 
 	private int id;
 	private Spiller spiller;
-	ArrayList<Spiller> spillere = new ArrayList<Spiller>();
-	Kopp kopp = new Kopp(1, 0);
+	private ArrayList<Spiller> spillere = new ArrayList<Spiller>();
+	private Kopp kopp = new Kopp(1, 0);
 
 	public Terningspill(int id) {
 		this.id = id;
@@ -39,6 +39,7 @@ public class Terningspill {
 			// her ligger det en liten juksebit
 			if (spillere.get(i).getNavn().toLowerCase().equals("arne")) {
 				spillere.get(i).setVerdi(12);
+
 			}
 			// cheat end
 		}

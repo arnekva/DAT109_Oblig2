@@ -14,7 +14,7 @@ public class Kopp {
 	private Random random;
 
 	private Terning terning;
-	ArrayList<Terning> terninger = new ArrayList<Terning>();
+	private ArrayList<Terning> terninger = new ArrayList<Terning>();
 
 	public Kopp(int id, int sum) {
 		super();
