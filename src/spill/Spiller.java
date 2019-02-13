@@ -1,5 +1,9 @@
 package spill;
 
+/**
+ * @author arnekvaleberg
+ *
+ */
 public class Spiller {
 
 	String navn;
@@ -11,4 +15,10 @@ public class Spiller {
 		this.verdi = verdi;
 	}
 
+	/**
+	 * @param kopp
+	 */
+	public void spill(Kopp kopp) {
+		
+	}
 }

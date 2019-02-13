@@ -1,5 +1,9 @@
 package spill;
 
+/**
+ * @author arnekvaleberg
+ *
+ */
 public class Terning {
 	int terningId;
 	int verdi;

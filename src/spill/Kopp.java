@@ -1,5 +1,9 @@
 package spill;
 
+/**
+ * @author arnekvaleberg
+ *
+ */
 public class Kopp {
 	int koppId;
 	int sum;
@@ -10,4 +14,5 @@ public class Kopp {
 		this.sum = sum;
 	}
 
+	
 }
