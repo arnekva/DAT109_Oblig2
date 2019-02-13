@@ -13,8 +13,22 @@ public class Terning {
 		this.terningId = terningId;
 		this.verdi = verdi;
 	}
-	
-	public void leggTilSpiller(String navn, int verdi) {
-		
+
+	public int getTerningId() {
+		return terningId;
 	}
+
+	public void setTerningId(int terningId) {
+		this.terningId = terningId;
+	}
+
+	public int getVerdi() {
+		return verdi;
+	}
+
+	public void setVerdi(int verdi) {
+		this.verdi = verdi;
+	}
+	
+	
 }

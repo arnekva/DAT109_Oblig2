@@ -11,5 +11,20 @@ public class Terningspill {
 	
 		this.id = id;
 	}
-
+	
+	
+	/**
+	 * Legg til en ny spiller
+	 * @param navn - Navnet på spilleren (String)
+	 */
+	public void leggTilSpiller(String navn) {
+		Spiller spiller = new Spiller(navn);
+	}
+	
+	/**
+	 * 
+	 */
+	public void spill() {
+		
+	}
 }
