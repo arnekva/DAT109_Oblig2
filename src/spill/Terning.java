@@ -1,7 +1,7 @@
 package spill;
 
 /**
- * @author Marcus
+ * @author GruppeXX
  *
  */
 public class Terning {
