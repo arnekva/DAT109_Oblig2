@@ -18,6 +18,7 @@ public class Terning {
 		this.terningId = terningId;
 	}
 
+	
 	public int getVerdi() {
 		return verdi;
 	}
