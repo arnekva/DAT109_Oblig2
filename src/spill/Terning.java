@@ -6,7 +6,7 @@ package spill;
  */
 public class Terning {
 	int terningId;
-	Integer verdi;
+	int verdi;
 
 	/**
 	 * @param terningId
