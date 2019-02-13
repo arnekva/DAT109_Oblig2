@@ -36,4 +36,9 @@ public class Spiller {
 		this.verdi = verdi;
 	}
 
+	@Override
+	public String toString() {
+		return "" + navn + " scoret:\t" + verdi;
+	}
+
 }

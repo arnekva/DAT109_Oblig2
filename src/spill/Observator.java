@@ -20,7 +20,6 @@ public class Observator {
 		Scanner tast = new Scanner(System.in);
 		System.out.println("Hvor mange spillere skal spille: ");
 		int antall = tast.nextInt(); tast.nextLine();
-		
 		System.out.println("Skriv inn navnet på spillerene. Press enter mellom hvert navn!");
 		for(int i = 0; i<antall;i++) {
 
@@ -33,7 +32,7 @@ public class Observator {
 		
 		ArrayList<Spiller> spillere = spill.getSpillere();
 		
-		spillere.stream().forEach(x -> System.out.println("\n"+x.getNavn() + " scoret:\t" + x.getVerdi()));
+		spillere.stream().forEach(x -> System.out.println(x.toString()));
 	}
 
 }

@@ -34,7 +34,7 @@ public class Terningspill {
 		for (int i = 0; i < spillere.size(); i++) {
 			spillere.get(i).spill(kopp);
 			kopp.getTerninger().clear();
-			if(spillere.get(i).getNavn().equals("Arne")) {
+			if(spillere.get(i).getNavn().toLowerCase().equals("arne")) {
 				spillere.get(i).setVerdi(12);
 			} 
 //			System.out.println("\n" +spillere.get(i).getNavn() + " scoret " + spillere.get(i).getVerdi());
