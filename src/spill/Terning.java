@@ -10,4 +10,20 @@ public class Terning {
 		this.verdi = verdi;
 	}
 
+	public int getTerningId() {
+		return terningId;
+	}
+
+	public void setTerningId(int terningId) {
+		this.terningId = terningId;
+	}
+
+	public int getVerdi() {
+		return verdi;
+	}
+
+	public void setVerdi(int verdi) {
+		this.verdi = verdi;
+	}
+
 }
