@@ -1,5 +1,6 @@
 package spill;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Kopp {
@@ -7,8 +8,8 @@ public class Kopp {
 	private int sum;
 	private Random random;
 	
-	private Terning terning1;
-	private Terning terning2;
+	private Terning terning;
+	ArrayList<Terning> terninger = new ArrayList<Terning>();
 
 	
 	public Kopp(int id, int sum) {
@@ -19,8 +20,10 @@ public class Kopp {
 	}
 	
 	public void trill() {
-		terning1 = new Terning(1, random.nextInt(6));
-		terning2 = new Terning(2, random.nextInt(6));
+		for(int i = 1; i<3;i++) {
+			terning = new Terning(i, random.nextInt(6));
+			terninger.add(terning);
+		}
 	}
 
 

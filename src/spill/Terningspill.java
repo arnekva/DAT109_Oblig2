@@ -3,6 +3,7 @@ package spill;
 import java.util.ArrayList;
 
 public class Terningspill {
+	
 	private int id;
 	private Spiller spiller;
 	ArrayList<Spiller> spillere = new ArrayList<Spiller>();

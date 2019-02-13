@@ -12,6 +12,7 @@ public class Spiller {
 	}
 	
 	public void spill(Kopp kopp) {
+		kopp.trill();
 		
 	}
 
