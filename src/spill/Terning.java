@@ -1,7 +1,7 @@
 package spill;
 
 /**
- * @author GruppeXX
+ * @author Obl 2 Gruppe 10
  *
  */
 public class Terning {
@@ -9,8 +9,9 @@ public class Terning {
 	int verdi;
 
 	/**
-	 * @param terningId
-	 * @param verdi
+	 * Kunstruktør for terning
+	 * @param terningId - IDen på terningen
+	 * @param verdi - Startverdien til terningen
 	 */
 	public Terning(int terningId, int verdi) {
 		this.terningId = terningId;

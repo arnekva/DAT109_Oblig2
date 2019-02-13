@@ -3,7 +3,12 @@ package spill;
 import java.util.ArrayList;
 import java.util.Random;
 
+/**
+ * @author Obl 2 Gruppe 10
+ *
+ */
 public class Kopp {
+	
 	private int id;
 	private int sum;
 	private Random random;
@@ -18,12 +23,15 @@ public class Kopp {
 
 	}
 
+	/**
+	 * Triller 2 terninger og legger til resultatet i terning-arraylist
+	 */
 	public void trill() {
 		for (int i = 1; i < 3; i++) {
-			terning = new Terning(i, (int) ((Math.random() * 6)+1));
+			terning = new Terning(i, (int) ((Math.random() * 6) + 1));
 			terninger.add(terning);
 		}
-		
+
 	}
 
 	public int getId() {
@@ -34,9 +42,13 @@ public class Kopp {
 		this.id = id;
 	}
 
+	/**
+	 * Legger sammen de to terningene til en int
+	 * @return Summen på de to terningene
+	 */
 	public int getSum() {
 		sum = 0;
-		for(int i = 0; i<terninger.size(); i++) {
+		for (int i = 0; i < terninger.size(); i++) {
 			sum += terninger.get(i).getVerdi();
 		}
 		return sum;

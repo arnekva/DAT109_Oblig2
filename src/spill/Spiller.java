@@ -1,5 +1,9 @@
 package spill;
 
+/**
+ * @author Obl 2 Gruppe 10
+ *
+ */
 public class Spiller {
 
 	private String navn;
