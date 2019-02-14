@@ -35,6 +35,7 @@ public class Observator {
 		tast.close();
 
 		ArrayList<Spiller> spillere = spill.getSpillere();
+		
 		System.out.println("\n*** RESULTATER *** \n");
 		spillere.stream().forEach(x -> System.out.println(x.toString()));
 
@@ -47,7 +48,14 @@ public class Observator {
 		if (vinnere.size() > 1) {
 			System.out.println("\nDet er flere vinnere! Gratulerer til: ");
 			for (int d = 0; d < vinnere.size(); d++) {
-				System.out.println(vinnere.get(d).getNavn());
+				System.out.print(vinnere.get(d).getNavn());
+				if(d < vinnere.size()-2) {
+					System.out.print(", ");
+				} else if(d < vinnere.size()-1) {
+					System.out.print(" og ");
+				} else {
+					System.out.print("!");
+				}
 			}
 		} else {
 			System.out.println("\nVinneren er " + vinner.getNavn() + "!");
