@@ -10,8 +10,9 @@ public class Terning {
 
 	/**
 	 * Kunstruktør for terning
+	 * 
 	 * @param terningId - IDen på terningen
-	 * @param verdi - Startverdien til terningen
+	 * @param verdi     - Startverdien til terningen
 	 */
 	public Terning(int terningId, int verdi) {
 		this.terningId = terningId;

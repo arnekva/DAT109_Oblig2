@@ -26,15 +26,17 @@ public class Terningspill {
 	}
 
 	/**
-	 * Går gjennom spillerlisten i en løkke og triller terningene. For hver spiller. 
-	 * Clearer terningtabellen for hver gjennomgang slik at en deltaker ikke får verdi fra mer enn 2 terninger.
+	 * Går gjennom spillerlisten i en løkke og triller terningene. For hver spiller.
+	 * Clearer terningtabellen for hver gjennomgang slik at en deltaker ikke får
+	 * verdi fra mer enn 2 terninger.
 	 */
 	public void spill() {
 		for (int i = 0; i < spillere.size(); i++) {
 			spillere.get(i).spill(kopp);
 			kopp.getTerninger().clear();
 
-			// her ligger det en liten juksebit. Brukes for å teste vinnersjekken i observatorklassen
+			// her ligger det en liten juksebit. Brukes for å teste vinnersjekken i
+			// observatorklassen
 			if (spillere.get(i).getNavn().toLowerCase().equals("arne")) {
 				spillere.get(i).setVerdi(12);
 
