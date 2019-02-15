@@ -22,7 +22,7 @@ public class Observator {
 	public static void main(String[] args) {
 		Terningspill spill = new Terningspill(1);
 		Scanner tast = new Scanner(System.in);
-		int runde = 2;
+		int runde = 1;
 		boolean ferdig = false;
 		boolean nyeDeltakere = true;
 		while (!ferdig) {
@@ -66,20 +66,26 @@ public class Observator {
 			} else {
 				System.out.println("\nVinneren er " + vinner.getNavn() + "!");
 			}
+
+			/*
+			 * Her ligger det litt kode for å gi brukeren muligheten til å spille flere
+			 * runder, med case for nye eller samme deltakere. 
+			 */
 			System.out.println(
 					"\nØnsker du å spille en runde til? Skriv 'like' for å spille med samme deltakere eller 'nye' for å skrive inn nye deltakere. Trykk enter for å avslutte.");
 			String svar = tast.nextLine();
 
+			runde++;
 			switch (svar) {
 			case ("like"):
 				System.out.println("\nSpiller runde " + runde + "!");
 				nyeDeltakere = false;
-				
+
 				break;
 			case ("nye"):
 				System.out.println("\nSpiller runde " + runde + "!");
 				nyeDeltakere = true;
-				
+
 				break;
 			default:
 				ferdig = true;
@@ -87,7 +93,7 @@ public class Observator {
 				tast.close();
 				break;
 			}
-			runde++;
+			
 		}
 	}
 

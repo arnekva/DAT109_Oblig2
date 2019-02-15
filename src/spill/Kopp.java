@@ -1,17 +1,15 @@
 package spill;
 
 import java.util.ArrayList;
-import java.util.Random;
 
 /**
  * @author Obl 2 Gruppe 10
  *
  */
 public class Kopp {
-	
+
 	private int id;
 	private int sum;
-	private Random random;
 
 	private Terning terning;
 	private ArrayList<Terning> terninger = new ArrayList<Terning>();
@@ -33,7 +31,7 @@ public class Kopp {
 		}
 
 	}
-	
+
 	public int getId() {
 		return id;
 	}
@@ -44,6 +42,7 @@ public class Kopp {
 
 	/**
 	 * Legger sammen de to terningene til en int
+	 * 
 	 * @return Summen på de to terningene
 	 */
 	public int getSum() {
@@ -65,6 +64,5 @@ public class Kopp {
 	public void setTerninger(ArrayList<Terning> terninger) {
 		this.terninger = terninger;
 	}
-
 
 }

@@ -42,7 +42,7 @@ public class Spiller {
 
 	@Override
 	public String toString() {
-		return "" + navn + " scoret:\t" + verdi;
+		return navn + " scoret:\t" + verdi;
 	}
 
 }
