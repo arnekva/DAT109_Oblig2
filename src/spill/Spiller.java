@@ -1,25 +1,27 @@
 package spill;
 
 /**
- * @author arnekvaleberg
+ * @author Obl 2 Gruppe 10
  *
  */
 public class Spiller {
 
-	String navn;
-	int verdi;
+	private String navn;
+	private int verdi;
 
 	public Spiller(String navn) {
-		super();
+		
 		this.navn = navn;
-
+		this.verdi = 0;
 	}
-
+	
 	/**
-	 * @param kopp
+	 * Triller terningene og oppdaterer scoren til spilleren
+	 * @param kopp - Koppen som skal trilles
 	 */
 	public void spill(Kopp kopp) {
-		
+		kopp.trill();
+		verdi = kopp.getSum();
 	}
 
 	public String getNavn() {
@@ -37,7 +39,10 @@ public class Spiller {
 	public void setVerdi(int verdi) {
 		this.verdi = verdi;
 	}
-	
-	
-	
+
+	@Override
+	public String toString() {
+		return navn + " scoret:\t" + verdi;
+	}
+
 }
